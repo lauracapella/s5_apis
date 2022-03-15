@@ -1,0 +1,32 @@
+.header {
+    background-color:#ffffff);
+    padding:3px;
+}
+
+.chistes_wrap {
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    background-image: url(bckgd-2.jpg);
+    background-size: cover;
+}
+
+.chistes{
+    padding:30px;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: darkgray;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+}
+
+#chiste_btn{
+    margin-top: 20px;
+    background-color: darkolivegreen;
+    border-radius: 18px;
+    padding: 10px;
+    color: floralwhite;
+}
