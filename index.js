@@ -14,3 +14,5 @@ const getData = function() {
         .catch(error => console.log(error))
 };
 chiste_btn.addEventListener('click', getData);
+
+
