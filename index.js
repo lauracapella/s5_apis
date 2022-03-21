@@ -2,6 +2,8 @@ const chiste_btn = document.querySelector('#chiste_btn');
 const chiste_div = document.querySelector('#chiste_div');
 const score_btn = document.querySelector('#score_bot');
 const weather_div = document.querySelector('.tiempoHoy');
+//const weather_icon_div = document.querySelector('.imgicon');
+
 
 let scoreUser = 0;
 
@@ -111,8 +113,13 @@ async function fetchWeatherJSON() {
   return weather;
 }
 fetchWeatherJSON().then(weather => {
-  weather_div.innerHTML = (weather.weather[0].main); // fetched weather
+  var iconcode = weather.weather[0].icon;
+  var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+  var weatherCelsius = (weather.main.temp - 273.15).toFixed(2); 
+  weather_div.innerHTML = (weatherCelsius + ' Cº'); // fetched weather
+  document.getElementById("imgicon").src=iconurl;
 });
+
  
 
 //https://api.openweathermap.org/data/2.5/weather?lat=41.3874&lon=2.1686&appid=a408449b27687356ad659876873bd4dd

@@ -1,33 +1,88 @@
 .header {
     background-color:#ffffff;
-    padding:3px;
+}
+.header_container{
+    display:flex;
+}
+.header_child{
+    width:auto;
+    padding: 10px;
+}
+
+
+.tiempoHoy{
+    font-family: sans-serif;
 }
 
 .chistes_wrap {
     display: flex;
     justify-content: center;
     height: 85vh;
-    background-image: url(img/bckgd-2.jpg);
-    background-size: cover;
+    background: url(img/blob2.svg) , url(img/blob1.svg), url(img/blob3.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom , center center, right top;
+    background-size: 20%, 670px, 20%;
 }
 
 .chistes{
     padding:30px;
-    width: 500px;
-    background-color: #ffffff;
+    width: 400px;
     box-shadow: darkgray;
     height: fit-content;
     text-align: center;
     margin: auto;
-    box-shadow: 0 0 10px;
     border-radius: 20px;
+    color:azure;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#chiste_div{
+    margin-bottom: 20px;
+    max-width: 500px;
 }
 
 #chiste_btn{
-    margin-top: 20px;
-    background-color: darkolivegreen;
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: #ffffff00;
     border-radius: 20px;
     padding: 12px 25px 12px 25px;
-    color: floralwhite;
-    border: lightslategray;
+    color: #000000;
+    border: #000000 2px;
+    border-style: solid;
+    border-width: 3px;
+    height: 40px;
+    width: 180px;
+}
+.fondo_boton{
+    background-color: gold;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+}
+
+.fondo_boton:hover{
+    background-color: rgb(2, 133, 135);
+}
+
+.valora_button{
+    background-color: gold;
+    border:0px;
+    border-radius: 100px;
+    width: 36px;
+    height: 36px;
+    padding-top: -4px;
+    padding-left: 2px;
+    margin: 10px;
+}
+
+.valora_button:hover{
+    background-color: rgb(2, 133, 135);
+}
+
+.valorate{
+    margin-bottom: 20px;
 }

@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h3 class="tiempoHoy">el tiempo hoy</h3>
+    <header class="header_container">
+        <div class="header_child"><img id='imgicon' src='' /></div>
+        <div class="header_child2"></div><h3 class="tiempoHoy"></h3></div>
     </header>
     <div class="chistes_wrap">
         <div class="chistes">
-            <h2>Preparat per riure? &#128514;</h2>
+            <h2>Preparat per riure?</h2>
             <div id="chiste_div"></div>
             <div class="valorate">
-                <button id="score_bot" onclick="getValoration(1)" value=1> 1 </button>
-                <button id="score_bot" onclick="getValoration(2)" value=2> 2 </button>
-                <button id="score_bot" onclick="getValoration(3)" value=3> 3 </button>
+                <button class="valora_button" id="score_bot" onclick="getValoration(1)" value=1> <i style='font-size:36px'class="fa-regular fa-face-frown"></i> </button>
+                <button class="valora_button" id="score_bot" onclick="getValoration(2)" value=2> <i style='font-size:36px' class="fa-regular fa-face-meh"></i></button>
+                <button class="valora_button" id="score_bot" onclick="getValoration(3)" value=3> <i style='font-size:36px' class="fa-regular fa-face-laugh-beam"></i> </button>
             </div>
-            <button id="chiste_btn">SEGÜENT ACUDIT</button>
+            <div class='fondo_boton'><button id="chiste_btn">SEGÜENT ACUDIT</button></div>
         </div>
     </div>
     
