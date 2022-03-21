@@ -1,6 +1,4 @@
-.header {
-    background-color:#ffffff;
-}
+
 .header_container{
     display:flex;
 }
@@ -8,7 +6,6 @@
     width:auto;
     padding: 10px;
 }
-
 
 .tiempoHoy{
     font-family: sans-serif;
@@ -21,7 +18,7 @@
     background: url(img/blob2.svg) , url(img/blob1.svg), url(img/blob3.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left bottom , center center, right top;
-    background-size: 20%, 670px, 20%;
+    background-size: 20%, 750px, 20%;
 }
 
 .chistes{
@@ -39,6 +36,7 @@
     justify-content: center;
     flex-direction: column;
 }
+
 #chiste_div{
     margin-bottom: 20px;
     max-width: 500px;
@@ -57,6 +55,7 @@
     height: 40px;
     width: 180px;
 }
+
 .fondo_boton{
     background-color: gold;
     border-radius: 20px;
