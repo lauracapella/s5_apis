@@ -1,10 +1,12 @@
 
+import {personalApiKey} from './apikey.js';
+
 const chiste_btn = document.querySelector('#chiste_btn');
 const chiste_div = document.querySelector('#chiste_div');
 const score_btn = document.querySelector('#score_bot');
 const weather_div = document.querySelector('.tiempoHoy');
+//const personalApiKey2 = personalApiKey;
 
-//import personalApiKey from '/apikey.js';
 
 let scoreUser = 0;
 let reportAcudits = [];
@@ -69,9 +71,7 @@ let getValoration = function(value) {
 };
 
 async function fetchWeatherJSON() {
-  const personalApiKey = 'a408449b27687356ad659876873bd4dd';
   const response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=41.3874&lon=2.1686&appid=' + personalApiKey);
-  //const response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=41.3874&lon=2.1686&appid=a408449b27687356ad659876873bd4dd');
   const weather = await response.json();
   return weather;
 }
