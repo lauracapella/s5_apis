@@ -1,11 +1,11 @@
 
-import {personalApiKey} from './apikey.js';
+//import {personalApiKey} from './apikey.js';
 
 const chiste_btn = document.querySelector('#chiste_btn');
 const chiste_div = document.querySelector('#chiste_div');
 const score_btn = document.querySelector('#score_bot');
 const weather_div = document.querySelector('.tiempoHoy');
-//const personalApiKey2 = personalApiKey;
+const personalApiKey = '';
 
 
 let scoreUser = 0;
