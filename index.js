@@ -5,7 +5,7 @@ const chiste_btn = document.querySelector('#chiste_btn');
 const chiste_div = document.querySelector('#chiste_div');
 const score_btn = document.querySelector('#score_bot');
 const weather_div = document.querySelector('.tiempoHoy');
-const personalApiKey = '';
+const personalApiKey = 'a408449b27687356ad659876873bd4dd';
 
 
 let scoreUser = 0;
