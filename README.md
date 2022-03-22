@@ -1,0 +1,1 @@
+Please, fill in your https://openweathermap.org personal API KEY in file apikey.js.
